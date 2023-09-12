@@ -1,0 +1,205 @@
+:root {
+  --background-colour: rgb(2 6 23);
+  --background-light-colour: rgb(30 41 59);
+
+  --border-colour: rgb(255 255 255);
+  // --border: 1px solid var(--border-colour / 20%);
+  --border: 1px solid white;
+
+  --delberter-main-colour: #956fd6;
+  --delberter-main-light-colour: rgb(56 182 255);
+  --delberter-secondary-colour: rgb(42 252 152);
+
+  --card-size: 480px;
+  --font-size: 0.8rem;
+  --logo-size: calc(var(--card-size) * 0.3);
+}
+
+body {
+  background: var(--background-colour);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  font-family: "Noto Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.CardTrack {
+  height: 100%;
+  width: var(--card-size);
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+
+  &:before,
+  &:after {
+    content: "";
+    height: 100vh;
+    width: 1px;
+    position: absolute;
+    top: 50%;
+    translate: 0% -50%;
+  }
+  &:before {
+    left: -1px;
+    border-left: var(--border);
+  }
+  &:after {
+    right: -1px;
+    border-right: var(--border);
+  }
+
+  &__wrapper {
+    width: 100%;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      width: 100vw;
+      position: absolute;
+      left: 50%;
+      translate: -50%;
+    }
+  }
+  &:before {
+    top: -1px;
+    border-top: var(--border);
+  }
+  &:after {
+    bottom: -1px;
+    border-bottom: var(--border);
+  }
+}
+
+.Card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  position: relative;
+  margin: 1rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 4;
+
+    & > img {
+      width: var(--logo-size);
+    }
+  }
+
+  &__gradient {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: radial-gradient(
+      var(--background-light-colour) 40%,
+      var(--delberter-main-colour) 50%,
+      var(--delberter-main-light-colour),
+      var(--delberter-secondary-colour)
+    );
+    // background: radial-gradient(pink 40%, blue 50%, green, yellow);
+    mix-blend-mode: darken;
+    pointer-events: none;
+    z-index: 3;
+  }
+
+  &__letters {
+    --x: 0px;
+    --y: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: var(--font-size);
+    font-weight: 500;
+    word-wrap: break-word;
+    opacity: 0;
+    transition: opacity 400ms;
+    -webkit-mask-image: radial-gradient(
+      calc(var(--card-size) * 0.8) circle at var(--x) var(--y),
+      rgb(255 255 255) 20%,
+      rgb(255 255 255 / 25%),
+      transparent
+    );
+    scale: 1.03;
+
+    z-index: 3;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__corners {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+    pointer-events: none;
+
+    &__corner {
+      & > {
+        display: block;
+        height: 9px;
+        width: 1px;
+        position: absolute;
+        background-color: white;
+      }
+      &:after {
+        content: "";
+        width: 9px;
+        height: 1px;
+        position: absolute;
+        left: -4px;
+        top: 4px;
+        background-color: white;
+      }
+
+      &:nth-child(1) {
+        left: -1px;
+        top: -5px;
+      }
+      &:nth-child(2) {
+        right: -1px;
+        top: -5px;
+      }
+      &:nth-child(3) {
+        right: -1px;
+        bottom: -5px;
+      }
+      &:nth-child(4) {
+        left: -1px;
+        bottom: -5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --card-size: 340px;
+  }
+
+  .Card {
+    border-radius: 1rem;
+  }
+}
