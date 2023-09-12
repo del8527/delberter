@@ -1,7 +1,6 @@
 .HackedText {
   font-family: "Space Mono", monospace;
-    font-size: clamp(3rem, 3vw, 5rem);
-//   font-size: 30px;
+  font-size: clamp(3rem, 3vw, 5rem);
   color: white;
   padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
@@ -12,7 +11,6 @@
 
   &__character {
     display: inline-block;
-    // width: 16px;
     width: 24px;
     font-weight: 800;
   }

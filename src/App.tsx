@@ -6,7 +6,6 @@ function App() {
   return (
     <>
       <div>
-        {/* <Card /> */}
         <HackedText text="PLACEHOLDER" />
         <Card />
       </div>
