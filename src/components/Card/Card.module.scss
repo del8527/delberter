@@ -80,6 +80,7 @@ body {
     }
   }
 }
+
 .Card {
   display: flex;
   align-items: center;
@@ -188,6 +189,20 @@ body {
         bottom: -5px;
       }
     }
+  }
+}
+
+.MetaContainer {
+  padding: 0.2rem 1.6rem 1.6rem 1.6rem;
+  &__description {
+    text-align: left;
+    color: rgb(223, 225, 244);
+    font-size: 15px;
+    margin-bottom: 0.4rem;
+  }
+  &__technologies {
+    display: flex;
+    gap: 0.4rem;
   }
 }
 
