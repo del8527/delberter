@@ -8,7 +8,7 @@ function HackedText({ text }: IHackedTextProps) {
   const [hackedText, setHackedText] = useState<Array<string>>(text.split(""));
   const special_unicode = "₯₳₴₻ℂℌℝℳⅉℰ⅊ⅅ!?Ψ";
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + special_unicode;
-  const onMouseOver = () => {
+  const handleMouseEnter = () => {
     let iterations = 0;
     const interval = setInterval(() => {
       setHackedText(
@@ -28,12 +28,7 @@ function HackedText({ text }: IHackedTextProps) {
   };
 
   return (
-    <div
-      className={styles.HackedText}
-      onMouseOver={() => {
-        onMouseOver();
-      }}
-    >
+    <div className={styles.HackedText} onMouseEnter={handleMouseEnter}>
       {hackedText.map((character, index) => {
         return (
           <span key={index} className={styles.HackedText__character}>

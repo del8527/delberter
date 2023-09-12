@@ -7,7 +7,7 @@ function App() {
     <>
       <div>
         {/* <Card /> */}
-        <HackedText text="SUPERLONG" />
+        <HackedText text="PLACEHOLDER" />
         <Card />
       </div>
     </>
