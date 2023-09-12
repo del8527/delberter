@@ -1,18 +1,16 @@
 :root {
   --background-rgb: 2 6 23;
-  // --background-light-rgb: 30 41 59;
-  --background-light-rgb: 250 218 221;
+  --background-light-rgb: 30 41 59;
+  // --background-light-rgb: 250 218 221;
 
   --border-rgb: 255 255 255;
   --border: 1px solid rgb(var(--border-rgb) / 20%);
-  // --delberter-main-rgb: 41 121 255;
-  // --delberter-main-rgb: 149 111 214;
-  // --delberter-main-rgb: 159 0 255;
-  --delberter-main-rgb: 149 111 214;
-  // --delberter-main-light-rgb: 56 182 255;
-  --delberter-main-light-rgb: 159 0 255;
-  // --delberter-secondary-rgb: 42 252 152;
-  --delberter-secondary-rgb: 159 0 255;
+  --delberter-main-colour: rgb(41 121 255);
+  // --delberter-main-colour: rgb(149 111 214);
+  --delberter-main-light-colour: rgb(56 182 255);
+  // --delberter-main-light-colour: rgb(159 0 255);
+  --delberter-secondary-colour: rgb(42 252 152);
+  // --delberter-secondary-colour: rgb(159 0 255);
 
   --card-size: 480px;
   --font-size: 0.8rem;
@@ -103,6 +101,7 @@ body {
     justify-content: center;
     position: relative;
     z-index: 4;
+    pointer-events: none;
 
     img {
       width: var(--logo-size);
@@ -115,9 +114,9 @@ body {
     position: absolute;
     background: radial-gradient(
       rgb(var(--background-light-rgb)) 40%,
-      rgb(var(--delberter-main-rgb)) 50%,
-      rgb(var(--delberter-main-light-rgb)),
-      rgb(var(--delberter-secondary-rgb))
+      var(--delberter-main-colour) 50%,
+      var(--delberter-main-light-colour),
+      var(--delberter-secondary-colour)
     );
     // background: radial-gradient(pink 40%, blue 50%, green, yellow);
     mix-blend-mode: darken;
@@ -139,10 +138,16 @@ body {
     word-wrap: break-word;
     opacity: 0;
     transition: opacity 400ms;
+    // -webkit-mask-image: radial-gradient(
+    //   calc(var(--card-size) * 0.8) circle at var(--x) var(--y),
+    //   rgb(255 255 255) 20%,
+    //   rgb(255 255 255 / 25%),
+    //   transparent
+    // );
     -webkit-mask-image: radial-gradient(
       calc(var(--card-size) * 0.8) circle at var(--x) var(--y),
-      rgb(255 255 255) 20%,
-      rgb(255 255 255 / 25%),
+      red 20%,
+      green,
       transparent
     );
     scale: 1.03;

@@ -1,7 +1,8 @@
 import styles from "./Card.module.scss";
 import { useRef, useState } from "react";
-import vite from "../../../public/vite.svg";
-export default function Card() {
+import vite from "../../assets/vite.svg";
+
+function Card() {
   const cardRef = useRef(null);
   const [cardLetters, setCardLetters] = useState<string>("");
   const [cardXPosition, setCardXPosition] = useState<number>(0);
@@ -72,3 +73,5 @@ export default function Card() {
     </div>
   );
 }
+
+export default Card;
