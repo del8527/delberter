@@ -1,11 +1,13 @@
 import "./App.css";
 import Card from "./components/Card/Card";
+import HackedText from "./components/HackedText/HackedText";
 
 function App() {
   return (
     <>
       <div>
-        <Card />
+        {/* <Card /> */}
+        <HackedText text="SUPERLONG" />
         <Card />
       </div>
     </>
