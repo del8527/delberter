@@ -7,16 +7,16 @@ interface IHackedTextProps {
 function HackedText({ text }: IHackedTextProps) {
   const [hackedText, setHackedText] = useState<Array<string>>(text.split(""));
   const special_unicode = "₯₳₴₻ℂℌℝℳⅉℰ⅊ⅅ!?Ψ";
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + special_unicode;
+  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" + special_unicode;
   const handleMouseEnter = () => {
     let iterations = 0;
     const interval = setInterval(() => {
       setHackedText(
-        hackedText.map((letter, index) => {
+        hackedText.map((character, index) => {
           if (index < iterations) {
             return text[index];
           } else {
-            return letters[Math.floor(Math.random() * letters.length)];
+            return characters[Math.floor(Math.random() * characters.length)];
           }
         })
       );
