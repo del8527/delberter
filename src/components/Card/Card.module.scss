@@ -1,16 +1,12 @@
 :root {
   --background-rgb: 2 6 23;
   --background-light-rgb: 30 41 59;
-  // --background-light-rgb: 250 218 221;
 
   --border-rgb: 255 255 255;
   --border: 1px solid rgb(var(--border-rgb) / 20%);
-  --delberter-main-colour: rgb(41 121 255);
-  // --delberter-main-colour: rgb(149 111 214);
-  --delberter-main-light-colour: rgb(56 182 255);
-  // --delberter-main-light-colour: rgb(159 0 255);
-  --delberter-secondary-colour: rgb(42 252 152);
-  // --delberter-secondary-colour: rgb(159 0 255);
+  --delberter-main-colour: #561db8;
+  --delberter-main-light-colour: #956fd6;
+  --delberter-secondary-colour: #ff005d;
 
   --card-size: 480px;
   --font-size: 0.8rem;
@@ -118,13 +114,12 @@ body {
       var(--delberter-main-light-colour),
       var(--delberter-secondary-colour)
     );
-    // background: radial-gradient(pink 40%, blue 50%, green, yellow);
     mix-blend-mode: darken;
     pointer-events: none;
     z-index: 3;
   }
 
-  &__letters {
+  &__characters {
     --x: 0px;
     --y: 0px;
     position: absolute;
@@ -138,16 +133,10 @@ body {
     word-wrap: break-word;
     opacity: 0;
     transition: opacity 400ms;
-    // -webkit-mask-image: radial-gradient(
-    //   calc(var(--card-size) * 0.8) circle at var(--x) var(--y),
-    //   rgb(255 255 255) 20%,
-    //   rgb(255 255 255 / 25%),
-    //   transparent
-    // );
     -webkit-mask-image: radial-gradient(
       calc(var(--card-size) * 0.8) circle at var(--x) var(--y),
-      red 20%,
-      green,
+      rgb(255 255 255) 30%,
+      rgb(255 255 255 / 25%),
       transparent
     );
     scale: 1.03;

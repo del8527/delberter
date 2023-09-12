@@ -4,14 +4,16 @@ import vite from "../../assets/vite.svg";
 
 function Card() {
   const cardRef = useRef(null);
-  const [cardLetters, setCardLetters] = useState<string>("");
+  const [cardCharacters, setCardCharacters] = useState<string>("");
   const [cardXPosition, setCardXPosition] = useState<number>(0);
   const [cardYPosition, setCardYPosition] = useState<number>(0);
 
-  const chars =
-    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  const special_unicode = "ℌℝℳℂⅉ⅊ⅅΨ";
+  const characters =
+    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" +
+    special_unicode;
   const randomChar = () => {
-    return chars[Math.floor(Math.random() * (chars.length - 1))];
+    return characters[Math.floor(Math.random() * (characters.length - 1))];
   };
   const randomString = (length: number) => {
     return Array.from(Array(length)).map(randomChar).join("");
@@ -33,11 +35,11 @@ function Card() {
       const y = clientY - rect.top;
       setCardXPosition(x);
       setCardYPosition(y);
-      setCardLetters(randomString(1500));
+      setCardCharacters(randomString(1500));
     }
   };
 
-  const cardLettersStyle = {
+  const cardCharactersStyle = {
     "--x": `${cardXPosition}px`,
     "--y": `${cardYPosition}px`,
   } as React.CSSProperties;
@@ -59,8 +61,8 @@ function Card() {
             <img src={vite} alt="image" />
           </div>
           <div className={styles.Card__gradient}></div>
-          <div className={styles.Card__letters} style={cardLettersStyle}>
-            {cardLetters}
+          <div className={styles.Card__characters} style={cardCharactersStyle}>
+            {cardCharacters}
           </div>
         </div>
         <div className={styles.Card__corners}>
