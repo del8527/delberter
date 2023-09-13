@@ -1,3 +1,4 @@
+import Grid from "../Grid/Grid";
 import Card from "./Card/Card";
 import styles from "./Cards.module.scss";
 
@@ -8,13 +9,9 @@ function Cards() {
       <div className={styles.Cards__content}>
         {array.map(() => {
           return (
-            <div className={styles.Grid}>
+            <Grid>
               <Card />
-              <span className={styles.Grid__corner}></span>
-              <span className={styles.Grid__corner}></span>
-              <span className={styles.Grid__corner}></span>
-              <span className={styles.Grid__corner}></span>
-            </div>
+            </Grid>
           );
         })}
       </div>
