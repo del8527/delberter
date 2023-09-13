@@ -1,9 +1,7 @@
 .HackedText {
   font-family: "Space Mono", monospace;
-  font-size: clamp(3rem, 3vw, 5rem);
-  color: white;
-  padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
+  color: white;
   &:hover {
     background-color: white;
     color: black;
@@ -12,14 +10,9 @@
   &__character {
     display: inline-block;
     width: 2.4rem;
+
+    font-size: clamp(3rem, 3vw, 5rem);
+    font-size: 52px;
     font-weight: 800;
   }
-}
-body {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-  background-color: black;
-  margin: 0rem;
-  overflow: hidden;
 }

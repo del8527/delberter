@@ -1,0 +1,17 @@
+#root {
+  // margin: 0 auto;
+  // overflow: unset;
+}
+
+.App {
+
+  margin: 0 auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  min-width: 100%;
+  overflow-x: clip;
+  position: relative;
+
+}
