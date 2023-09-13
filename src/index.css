@@ -32,6 +32,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow: auto;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
   height: 100%;
   width: 100%;
   background-color: rgb(var(--background-rgb));

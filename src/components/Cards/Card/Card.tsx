@@ -1,10 +1,13 @@
 import styles from "./Card.module.scss";
 import { useRef, useState } from "react";
-import vite from "../../../assets/vite.svg";
-import IconContainer from "../../IconContainer/IconContainer";
-import react from "../../../assets/react.svg";
 
-function Card() {
+interface ICardProps {
+  imgSrc: string;
+  description: string;
+  technologyIcons: JSX.Element;
+}
+
+function Card({ imgSrc, description, technologyIcons }: ICardProps) {
   const cardRef = useRef(null);
   const [cardCharacters, setCardCharacters] = useState<string>("");
   const [cardXPosition, setCardXPosition] = useState<number>(0);
@@ -21,10 +24,10 @@ function Card() {
     return Array.from(Array(length)).map(randomChar).join("");
   };
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+  const handleMouseMove = (e: React.MouseEvent<Element, MouseEvent>) => {
     handleOnMove(e.clientX, e.clientY);
   };
-  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+  const handleTouchMove = (e: React.TouchEvent<Element>) => {
     const touch = e.touches[0];
     handleOnMove(touch.clientX, touch.clientY);
   };
@@ -59,7 +62,7 @@ function Card() {
         }}
       >
         <div className={styles.Card__image}>
-          <img src={vite} alt="image" />
+          <img src={imgSrc} alt="image" />
         </div>
         <div className={styles.Card__gradient}></div>
         <div className={styles.Card__characters} style={cardCharactersStyle}>
@@ -67,15 +70,10 @@ function Card() {
         </div>
       </div>
       <div className={styles.MetaContainer}>
-        <div className={styles.MetaContainer__description}>
-          CamelBak Insulated Podium Apple Pencil Chopsticks Popeyes iPhone has
-          the and mouse.
-        </div>
+        <div className={styles.MetaContainer__description}>{description}</div>
 
         <div className={styles.MetaContainer__technologies}>
-          <IconContainer>
-            <img src={react} height={30} width={30} />
-          </IconContainer>
+          {technologyIcons}
         </div>
       </div>
     </div>
