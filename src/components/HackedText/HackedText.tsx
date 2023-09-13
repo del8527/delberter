@@ -1,17 +1,20 @@
 import { useState } from "react";
 import styles from "./HackedText.module.scss";
-import hackedTextEffect from "../../util/hackedText";
+import hackedTextEffect from "../../util/hackedTextEffect";
 
 interface IHackedTextProps {
   text: string;
+  autoRefreshTexts?: Array<string>;
 }
-function HackedText({ text }: IHackedTextProps) {
+function HackedText({ text, autoRefreshTexts }: IHackedTextProps) {
   const [hackedText, setHackedText] = useState<Array<string>>([...text]);
   const handleMouseEnter = () => {
     hackedTextEffect(hackedText, setHackedText, text);
   };
 
-  return (
+  return autoRefreshTexts ? (
+    <div>auto</div>
+  ) : (
     <div className={styles.HackedText} onMouseEnter={handleMouseEnter}>
       {hackedText.map((character, index) => {
         return (
