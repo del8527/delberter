@@ -1,8 +1,9 @@
 import styles from "./Card.module.scss";
 import { useRef, useState } from "react";
-import vite from "../../assets/vite.svg";
-import IconContainer from "../IconContainer/IconContainer";
-import react from "../../assets/react.svg";
+import vite from "../../../assets/vite.svg";
+import IconContainer from "../../IconContainer/IconContainer";
+import react from "../../../assets/react.svg";
+
 function Card() {
   const cardRef = useRef(null);
   const [cardCharacters, setCardCharacters] = useState<string>("");
@@ -46,43 +47,35 @@ function Card() {
   } as React.CSSProperties;
 
   return (
-    <div className={styles.CardTrack}>
-      <div className={styles.CardTrack__wrapper}>
-        <div
-          className={styles.Card}
-          ref={cardRef}
-          onMouseMove={(e: React.MouseEvent) => {
-            handleMouseMove(e);
-          }}
-          onTouchMove={(e: React.TouchEvent) => {
-            handleTouchMove(e);
-          }}
-        >
-          <div className={styles.Card__image}>
-            <img src={vite} alt="image" />
-          </div>
-          <div className={styles.Card__gradient}></div>
-          <div className={styles.Card__characters} style={cardCharactersStyle}>
-            {cardCharacters}
-          </div>
+    <div className={styles.Wrapper}>
+      <div
+        className={styles.Card}
+        ref={cardRef}
+        onMouseMove={(e: React.MouseEvent) => {
+          handleMouseMove(e);
+        }}
+        onTouchMove={(e: React.TouchEvent) => {
+          handleTouchMove(e);
+        }}
+      >
+        <div className={styles.Card__image}>
+          <img src={vite} alt="image" />
         </div>
-        <div className={styles.MetaContainer}>
-          <div className={styles.MetaContainer__description}>
-            CamelBak Insulated Podium Apple Pencil Chopsticks Popeyes iPhone has
-            the and mouse.
-          </div>
+        <div className={styles.Card__gradient}></div>
+        <div className={styles.Card__characters} style={cardCharactersStyle}>
+          {cardCharacters}
+        </div>
+      </div>
+      <div className={styles.MetaContainer}>
+        <div className={styles.MetaContainer__description}>
+          CamelBak Insulated Podium Apple Pencil Chopsticks Popeyes iPhone has
+          the and mouse.
+        </div>
 
-          <div className={styles.MetaContainer__technologies}>
-            <IconContainer>
-              <img src={react} height={30} width={30} />
-            </IconContainer>
-          </div>
-        </div>
-        <div className={styles.Card__corners}>
-          <span className={styles.Card__corners__corner}></span>
-          <span className={styles.Card__corners__corner}></span>
-          <span className={styles.Card__corners__corner}></span>
-          <span className={styles.Card__corners__corner}></span>
+        <div className={styles.MetaContainer__technologies}>
+          <IconContainer>
+            <img src={react} height={30} width={30} />
+          </IconContainer>
         </div>
       </div>
     </div>
