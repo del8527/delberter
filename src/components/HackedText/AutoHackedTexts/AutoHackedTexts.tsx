@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 import styles from "./AutoHackedTexts.module.scss";
+import AutoHackedText from "./AutoHackedText/AutoHackedText";
 
 interface IAutoHackedTextsProps {
   texts: Array<string>;
+  characterStyles?: React.CSSProperties;
 }
-function AutoHackedTexts({ texts }: IAutoHackedTextsProps) {
+function AutoHackedTexts({ texts, characterStyles }: IAutoHackedTextsProps) {
   const [index, setIndex] = useState<number>(0);
 
   useEffect(() => {
-    const interval123 = setInterval(() => {
+    const interval = setInterval(() => {
       setIndex((previousIndex) => {
         if (previousIndex === texts.length - 1) {
           return 0;
@@ -16,14 +18,16 @@ function AutoHackedTexts({ texts }: IAutoHackedTextsProps) {
 
         return previousIndex + 1;
       });
-    }, 2000);
+    }, 3000);
 
     return () => {
-      clearInterval(interval123);
+      clearInterval(interval);
     };
   }, [texts.length]);
 
-  return <div className={styles.AutoHackedTexts}>{texts[index]}</div>;
+  return (
+    <AutoHackedText text={texts[index]} characterStyles={characterStyles} />
+  );
 }
 
 export default AutoHackedTexts;

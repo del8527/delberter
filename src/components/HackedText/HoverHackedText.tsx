@@ -4,8 +4,9 @@ import hackedTextEffect from "../../util/hackedTextEffect";
 
 interface IHoverHackedTextProps {
   text: string;
+  characterStyles?: React.CSSProperties;
 }
-function HoverHackedText({ text }: IHoverHackedTextProps) {
+function HoverHackedText({ text, characterStyles }: IHoverHackedTextProps) {
   const [hackedText, setHackedText] = useState<Array<string>>([...text]);
   const handleMouseEnter = () => {
     hackedTextEffect(hackedText, setHackedText, text);
@@ -15,7 +16,11 @@ function HoverHackedText({ text }: IHoverHackedTextProps) {
     <div className={styles.HoverHackedText} onMouseEnter={handleMouseEnter}>
       {hackedText.map((character, index) => {
         return (
-          <span key={index} className={styles.HoverHackedText__character}>
+          <span
+            key={index}
+            className={styles.HoverHackedText__character}
+            style={characterStyles}
+          >
             {character}
           </span>
         );
