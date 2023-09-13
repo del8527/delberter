@@ -8,10 +8,7 @@
   --delberter-main-light-colour: #956fd6;
   --delberter-secondary-colour: #ff005d;
 
-  --card-size: 480px; // change
-  --card-size: 280px;
   --font-size: 0.8rem;
-  --logo-size: calc(var(--card-size) * 0.3);
 }
 
 .Wrapper {
@@ -37,9 +34,10 @@
     position: relative;
     z-index: 4;
     pointer-events: none;
+    width: 100%;
 
     img {
-      width: var(--logo-size);
+      width: 30%;
     }
   }
 
@@ -73,7 +71,7 @@
     opacity: 0;
     transition: opacity 500ms;
     -webkit-mask-image: radial-gradient(
-      calc(var(--card-size) * 0.8) circle at var(--x) var(--y),
+      300px circle at var(--x) var(--y),
       rgb(255 255 255) 30%,
       rgb(48 22 91 / 25%),
       transparent

@@ -9,7 +9,7 @@
     content: "";
     position: absolute;
     left: -200%;
-    width: --beforeAndAfterWidth;
+    width: var(--beforeAndAfterWidth);
     height: 1px;
     background: #2a2b3a;
     z-index: 0;
@@ -19,7 +19,7 @@
     content: "";
     position: absolute;
     left: -200%;
-    width: --beforeAndAfterWidth;
+    width: var(--beforeAndAfterWidth);
     height: 1px;
     background: #2a2b3a;
     z-index: 0;
