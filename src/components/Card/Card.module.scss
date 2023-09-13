@@ -8,7 +8,8 @@
   --delberter-main-light-colour: #956fd6;
   --delberter-secondary-colour: #ff005d;
 
-  --card-size: 480px;
+  --card-size: 480px; // change
+  --card-size: 280px;
   --font-size: 0.8rem;
   --logo-size: calc(var(--card-size) * 0.3);
 }
@@ -20,12 +21,6 @@ body {
   justify-content: center;
   overflow: hidden;
   font-family: "Noto Sans", sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 .CardTrack {
@@ -133,7 +128,7 @@ body {
     font-weight: 500;
     word-wrap: break-word;
     opacity: 0;
-    transition: opacity 400ms;
+    transition: opacity 500ms;
     -webkit-mask-image: radial-gradient(
       calc(var(--card-size) * 0.8) circle at var(--x) var(--y),
       rgb(255 255 255) 30%,
