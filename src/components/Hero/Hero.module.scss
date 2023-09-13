@@ -1,5 +1,4 @@
 .Hero {
-  background-color: red;
   height: 100vh;
   width: 100%;
   margin-top: -30px; // change , size of header
@@ -7,4 +6,6 @@
   top: 0;
   overflow: hidden;
   position: relative;
+  font-size: 100px;
+  color: white;
 }

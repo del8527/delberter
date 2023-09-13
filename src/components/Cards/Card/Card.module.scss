@@ -14,15 +14,6 @@
   --logo-size: calc(var(--card-size) * 0.3);
 }
 
-body {
-  background: rgb(var(--background-rgb));
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  font-family: "Noto Sans", sans-serif;
-}
-
 .Wrapper {
   width: 100%;
   position: relative;
@@ -84,7 +75,7 @@ body {
     -webkit-mask-image: radial-gradient(
       calc(var(--card-size) * 0.8) circle at var(--x) var(--y),
       rgb(255 255 255) 30%,
-      rgb(255 255 255 / 25%),
+      rgb(48 22 91 / 25%),
       transparent
     );
     scale: 1.03;

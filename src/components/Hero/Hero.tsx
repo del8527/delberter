@@ -3,7 +3,7 @@ import styles from "./Hero.module.scss";
 function Hero() {
   return (
     <div className={styles.Hero}>
-      <div>ad</div>
+      Hello. My name is Delbert Luo 
     </div>
   );
 }
