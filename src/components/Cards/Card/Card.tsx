@@ -1,8 +1,9 @@
 import styles from "./Card.module.scss";
 import { useRef, useState } from "react";
-import vite from "../../assets/vite.svg";
-import IconContainer from "../IconContainer/IconContainer";
-import react from "../../assets/react.svg";
+import vite from "../../../assets/vite.svg";
+import IconContainer from "../../IconContainer/IconContainer";
+import react from "../../../assets/react.svg";
+
 function Card() {
   const cardRef = useRef(null);
   const [cardCharacters, setCardCharacters] = useState<string>("");
