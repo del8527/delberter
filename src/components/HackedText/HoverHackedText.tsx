@@ -1,24 +1,21 @@
 import { useState } from "react";
-import styles from "./HackedText.module.scss";
+import styles from "./HoverHackedText.module.scss";
 import hackedTextEffect from "../../util/hackedTextEffect";
 
-interface IHackedTextProps {
+interface IHoverHackedTextProps {
   text: string;
-  autoRefreshTexts?: Array<string>;
 }
-function HackedText({ text, autoRefreshTexts }: IHackedTextProps) {
+function HoverHackedText({ text }: IHoverHackedTextProps) {
   const [hackedText, setHackedText] = useState<Array<string>>([...text]);
   const handleMouseEnter = () => {
     hackedTextEffect(hackedText, setHackedText, text);
   };
 
-  return autoRefreshTexts ? (
-    <div>auto</div>
-  ) : (
-    <div className={styles.HackedText} onMouseEnter={handleMouseEnter}>
+  return (
+    <div className={styles.HoverHackedText} onMouseEnter={handleMouseEnter}>
       {hackedText.map((character, index) => {
         return (
-          <span key={index} className={styles.HackedText__character}>
+          <span key={index} className={styles.HoverHackedText__character}>
             {character}
           </span>
         );
@@ -27,4 +24,4 @@ function HackedText({ text, autoRefreshTexts }: IHackedTextProps) {
   );
 }
 
-export default HackedText;
+export default HoverHackedText;
