@@ -23,57 +23,9 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-.CardTrack {
-  height: 100%;
-  width: var(--card-size);
-  display: flex;
-  align-items: center;
+.Wrapper {
+  width: 100%;
   position: relative;
-
-  &:before {
-    content: "";
-    height: 100vh;
-    width: 1px;
-    position: absolute;
-    top: 50%;
-    translate: 0% -50%;
-    left: -1px;
-    border-left: var(--border);
-  }
-  &:after {
-    content: "";
-    height: 100vh;
-    width: 1px;
-    position: absolute;
-    top: 50%;
-    translate: 0% -50%;
-    right: -1px;
-    border-right: var(--border);
-  }
-
-  &__wrapper {
-    width: 100%;
-    position: relative;
-
-    &:before {
-      content: "";
-      width: 100vw;
-      position: absolute;
-      left: 50%;
-      translate: -50%;
-      top: -1px;
-      border-top: var(--border);
-    }
-    &:after {
-      content: "";
-      width: 100vw;
-      position: absolute;
-      left: 50%;
-      translate: -50%;
-      bottom: -1px;
-      border-bottom: var(--border);
-    }
-  }
 }
 
 .Card {
@@ -139,50 +91,6 @@ body {
 
     &:hover {
       opacity: 1;
-    }
-  }
-
-  &__corners {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 3;
-    pointer-events: none;
-
-    &__corner {
-      display: block;
-      height: 9px;
-      width: 1px;
-      position: absolute;
-      background-color: white;
-      &:after {
-        content: "";
-        width: 9px;
-        height: 1px;
-        position: absolute;
-        left: -4px;
-        top: 4px;
-        background-color: white;
-      }
-
-      &:nth-child(1) {
-        left: -1px;
-        top: -5px;
-      }
-      &:nth-child(2) {
-        right: -1px;
-        top: -5px;
-      }
-      &:nth-child(3) {
-        right: -1px;
-        bottom: -5px;
-      }
-      &:nth-child(4) {
-        left: -1px;
-        bottom: -5px;
-      }
     }
   }
 }

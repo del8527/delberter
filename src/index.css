@@ -12,6 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  width: 100%;
 }
 
 a {
@@ -31,6 +32,7 @@ body {
   min-height: 100vh;
   overflow: auto;
   height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -58,7 +60,7 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  &:root {
     color: #213547;
     /* background-color: #ffffff; // change*/
   }
