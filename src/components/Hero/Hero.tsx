@@ -7,7 +7,7 @@ import styles from "./Hero.module.scss";
 function Hero() {
   return (
     <div className={styles.Hero}>
-      Hello. My name is Delbert Luo
+      Hey, I'm Delbert
       <AutoHackedText
         text="I'll allow it."
         characterStyles={
