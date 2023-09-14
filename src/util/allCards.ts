@@ -3,13 +3,17 @@ import NovaWhite from "../assets/NovaWhite.svg";
 import GeoGrindWhite from "../assets/GeoGrindWhite.svg";
 export type SingleCard = {
   imageSource: string;
+  title: string;
+  role?: string;
   description: string;
   technologies: Array<string>;
 };
 export const ExperienceCards: Array<SingleCard> = [
   {
     imageSource: FordProWhite,
-    description: "Software Engineering Intern at Ford Pro",
+    title: "Ford Pro",
+    role: "Software Engineering Intern",
+    description: "Platform",
     technologies: [
       "React",
       "TypeScript",
@@ -24,7 +28,9 @@ export const ExperienceCards: Array<SingleCard> = [
   },
   {
     imageSource: NovaWhite,
-    description: "Full-stack Developer at Nova",
+    title: "Nova",
+    role: "Full-stack Developer",
+    description: "Adtech",
     technologies: [
       "React",
       "TypeScript",
@@ -38,7 +44,9 @@ export const ExperienceCards: Array<SingleCard> = [
   },
   {
     imageSource: GeoGrindWhite,
-    description: "Founder/Software Engineer Lead, Desktop and Web @ GeoGrind",
+    title: "GeoGrind",
+    role: "Founder - SWE Lead, Desktop and Web",
+    description: "100k lines of code",
     technologies: [
       "React",
       "TypeScript",

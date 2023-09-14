@@ -3,11 +3,19 @@ import { useRef, useState } from "react";
 
 interface ICardProps {
   imageSource: string;
+  title: string;
+  role?: string;
   description: string;
   technologies: Array<string>;
 }
 
-function Card({ imageSource, description, technologies }: ICardProps) {
+function Card({
+  imageSource,
+  title,
+  role,
+  description,
+  technologies,
+}: ICardProps) {
   const cardRef = useRef(null);
   const [cardCharacters, setCardCharacters] = useState<string>("");
   const [cardXPosition, setCardXPosition] = useState<number>(0);
@@ -70,6 +78,9 @@ function Card({ imageSource, description, technologies }: ICardProps) {
         </div>
       </div>
       <div className={styles.MetaContainer}>
+        <div className={styles.MetaContainer__title}>{title}</div>
+        <span className={styles.MetaContainer__role}>{role}</span>
+
         <div className={styles.MetaContainer__description}>{description}</div>
 
         <div className={styles.MetaContainer__technologies}>
