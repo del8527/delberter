@@ -37,7 +37,8 @@
     width: 100%;
 
     img {
-      width: 30%;
+      width: 55%;
+      color: white;
     }
   }
 
@@ -85,16 +86,49 @@
 }
 
 .MetaContainer {
-  padding: 0.2rem 1.6rem 1.6rem 1.6rem;
+  padding: 0rem 1.6rem 1.6rem 1.6rem;
+  text-align: left;
+
+  &__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px 0.6rem;
+
+    color: #fff;
+    font-size: 24px;
+
+    &__date {
+      color: #babcd2;
+      font-size: 14px;
+    }
+  }
+
+  &__role {
+    color: #956fd6;
+    font-size: 16px;
+  }
   &__description {
-    text-align: left;
     color: rgb(223, 225, 244);
     font-size: 15px;
     margin-bottom: 0.4rem;
   }
   &__technologies {
     display: flex;
+    flex-wrap: wrap;
     gap: 0.4rem;
+    color: #fff;
+
+    &__item {
+      display: inline-block;
+      padding: 4px 0.6rem;
+
+      font-size: 14px;
+      border-radius: 1.2rem;
+      border: 1px solid #383a4d;
+      line-height: normal;
+    }
   }
 }
 
