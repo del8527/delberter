@@ -9,7 +9,7 @@ function Cards() {
       <div className={styles.Cards__content}>
         {ExperienceCards.map((cardData) => {
           return (
-            <Grid>
+            <Grid key={cardData.title}>
               <Card {...cardData} />
             </Grid>
           );

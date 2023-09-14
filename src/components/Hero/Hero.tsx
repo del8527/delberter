@@ -12,7 +12,7 @@ function Hero() {
         text="I'm a."
         characterStyles={
           {
-            "font-size": "40px",
+            fontSize: "40px",
             width: "30px",
           } as React.CSSProperties
         }
@@ -21,9 +21,9 @@ function Hero() {
         texts={["superlong", "longer", "short"]}
         characterStyles={
           {
-            "font-size": "50px",
+            fontSize: "50px",
             width: "30px",
-            "font-weight": "900",
+            fontWeight: "900",
           } as React.CSSProperties
         }
       />
@@ -33,7 +33,7 @@ function Hero() {
             text="dell test 123"
             characterStyles={
               {
-                "font-size": "40px",
+                fontSize: "40px",
                 width: "30px",
               } as React.CSSProperties
             }

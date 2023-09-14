@@ -91,7 +91,10 @@ function Card({
         <div className={styles.MetaContainer__technologies}>
           {technologies.map((technology) => {
             return (
-              <span className={styles.MetaContainer__technologies__item}>
+              <span
+                key={technology}
+                className={styles.MetaContainer__technologies__item}
+              >
                 {technology}
               </span>
             );
