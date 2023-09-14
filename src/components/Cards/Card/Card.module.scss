@@ -86,12 +86,21 @@
 }
 
 .MetaContainer {
-  padding: 0.2rem 1.6rem 1.6rem 1.6rem;
+  padding: 0rem 1.6rem 1.6rem 1.6rem;
   text-align: left;
 
   &__title {
-    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #fff;
     font-size: 24px;
+
+    &__date {
+      color: #babcd2;
+      font-size: 14px;
+    }
   }
 
   &__role {

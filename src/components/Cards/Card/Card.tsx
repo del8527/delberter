@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 interface ICardProps {
   imageSource: string;
   title: string;
+  date?: string;
   role?: string;
   description: string;
   technologies: Array<string>;
@@ -12,6 +13,7 @@ interface ICardProps {
 function Card({
   imageSource,
   title,
+  date,
   role,
   description,
   technologies,
@@ -78,7 +80,10 @@ function Card({
         </div>
       </div>
       <div className={styles.MetaContainer}>
-        <div className={styles.MetaContainer__title}>{title}</div>
+        <div className={styles.MetaContainer__title}>
+          {title}
+          <span className={styles.MetaContainer__title__date}>{date}</span>
+        </div>
         <span className={styles.MetaContainer__role}>{role}</span>
 
         <div className={styles.MetaContainer__description}>{description}</div>
