@@ -27,10 +27,10 @@ export const ExperienceCards: Array<SingleCard> = [
     description: "Full-stack Developer at Nova",
     technologies: [
       "React",
-      "Django",
       "TypeScript",
-      "JavaScript",
+      "Django",
       "Python",
+      "Sass",
       "Jest",
       "SQL",
       "Jenkins",
@@ -42,7 +42,6 @@ export const ExperienceCards: Array<SingleCard> = [
     technologies: [
       "React",
       "TypeScript",
-      "JavaScript",
       "Sass",
       "Electron",
       "Next",
