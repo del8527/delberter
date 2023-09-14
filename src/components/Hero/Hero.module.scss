@@ -1,11 +1,41 @@
 .Hero {
+  display: flex;
   height: 100vh;
-  width: 100%;
-  margin-top: -30px; // change , size of header
-  padding: 0 1.6rem;
-  top: 0;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 2rem;
+
   overflow: hidden;
   position: relative;
-  font-size: 100px;
   color: white;
+  border-radius: 5rem;
+
+  &__maxWidthWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: calc(100% - 2em);
+  }
+
+  &__title {
+    font-size: 6em;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: 1.625em;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  background: radial-gradient(
+    140% 107.13% at 50% 10%,
+    transparent 37.41%,
+    rgb(141, 51, 238) 69.27%,
+    #fff 100%
+  );
+
 }

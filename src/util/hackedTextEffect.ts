@@ -23,7 +23,7 @@ const hackedTextEffect = (
       clearInterval(interval);
     }
     iterations += 1 / 3;
-  }, 40);
+  }, 20);
 };
 
 export default hackedTextEffect;
