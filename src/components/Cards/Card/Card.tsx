@@ -4,10 +4,10 @@ import { useRef, useState } from "react";
 interface ICardProps {
   imgSrc: string;
   description: string;
-  technologyIcons: JSX.Element;
+  technologies: Array<string>;
 }
 
-function Card({ imgSrc, description, technologyIcons }: ICardProps) {
+function Card({ imgSrc, description, technologies }: ICardProps) {
   const cardRef = useRef(null);
   const [cardCharacters, setCardCharacters] = useState<string>("");
   const [cardXPosition, setCardXPosition] = useState<number>(0);
@@ -73,8 +73,9 @@ function Card({ imgSrc, description, technologyIcons }: ICardProps) {
         <div className={styles.MetaContainer__description}>{description}</div>
 
         <div className={styles.MetaContainer__technologies}>
-          {/* {technologyIcons} */}
-          test
+          {technologies.map((technology) => {
+            return <span>{technology}</span>;
+          })}
         </div>
       </div>
     </div>

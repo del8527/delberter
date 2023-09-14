@@ -17,11 +17,7 @@ function Cards() {
                 imgSrc={vite}
                 description="CamelBak Insulated Podium Apple Pencil Chopsticks Popeyes iPhone has
                   the and mouse"
-                technologyIcons={
-                  <IconContainer>
-                    <img src={react} height={30} width={30} />
-                  </IconContainer>
-                }
+                technologies={["React"]}
               />
             </Grid>
           );
