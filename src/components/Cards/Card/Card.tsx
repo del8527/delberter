@@ -2,12 +2,12 @@ import styles from "./Card.module.scss";
 import { useRef, useState } from "react";
 
 interface ICardProps {
-  imgSrc: string;
+  imageSource: string;
   description: string;
   technologies: Array<string>;
 }
 
-function Card({ imgSrc, description, technologies }: ICardProps) {
+function Card({ imageSource, description, technologies }: ICardProps) {
   const cardRef = useRef(null);
   const [cardCharacters, setCardCharacters] = useState<string>("");
   const [cardXPosition, setCardXPosition] = useState<number>(0);
@@ -62,7 +62,7 @@ function Card({ imgSrc, description, technologies }: ICardProps) {
         }}
       >
         <div className={styles.Card__image}>
-          <img src={imgSrc} alt="image" />
+          <img src={imageSource} alt="image" />
         </div>
         <div className={styles.Card__gradient}></div>
         <div className={styles.Card__characters} style={cardCharactersStyle}>
@@ -74,7 +74,11 @@ function Card({ imgSrc, description, technologies }: ICardProps) {
 
         <div className={styles.MetaContainer__technologies}>
           {technologies.map((technology) => {
-            return <span>{technology}</span>;
+            return (
+              <span className={styles.MetaContainer__technologies__item}>
+                {technology}
+              </span>
+            );
           })}
         </div>
       </div>
