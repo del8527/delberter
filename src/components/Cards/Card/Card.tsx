@@ -73,7 +73,8 @@ function Card({ imgSrc, description, technologyIcons }: ICardProps) {
         <div className={styles.MetaContainer__description}>{description}</div>
 
         <div className={styles.MetaContainer__technologies}>
-          {technologyIcons}
+          {/* {technologyIcons} */}
+          test
         </div>
       </div>
     </div>

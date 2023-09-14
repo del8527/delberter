@@ -1,0 +1,10 @@
+.HoverHackedText {
+  font-family: "Space Mono", monospace;
+
+  &__character {
+    display: inline-block;
+    font-size: inherit;
+    width: inherit;
+    font-family: inherit;
+  }
+}

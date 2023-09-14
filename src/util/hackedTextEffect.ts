@@ -12,8 +12,10 @@ const hackedTextEffect = (
       hackedText.map((character, index) => {
         if (index < iterations) {
           return originalText[index];
-        } else {
+        } else if (index < originalText.length) {
           return characters[Math.floor(Math.random() * characters.length)];
+        } else {
+          return "";
         }
       })
     );
