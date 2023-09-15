@@ -1,15 +1,15 @@
 import styles from "./App.module.scss";
 
-import Cards from "./components/Cards/Cards";
+import Experience from "./components/Experience/Experience";
 import Hero from "./components/Hero/Hero";
-import { ExperienceCards, ProjectCards } from "./util/allCards";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
     <div className={styles.App}>
       <Hero />
-      <Cards cards={ExperienceCards} />
-      <Cards cards={ProjectCards} />
+      <Experience />
+      <Projects />
     </div>
   );
 }
