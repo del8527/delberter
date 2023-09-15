@@ -1,6 +1,10 @@
 import FordProWhite from "../assets/FordProWhite.svg";
 import NovaWhite from "../assets/NovaWhite.svg";
 import GeoGrindWhite from "../assets/GeoGrindWhite.svg";
+
+import AiResumeWriter from "../assets/AiResumeWriter.svg";
+import PayPalWhite from "../assets/PayPalWhite.svg";
+import DiscordWhite from "../assets/DiscordWhite.svg";
 export type SingleCard = {
   imageSource: string;
   title: string;
@@ -73,27 +77,34 @@ export const ExperienceCards: Array<SingleCard> = [
 
 export const ProjectCards: Array<SingleCard> = [
   {
-    imageSource: GeoGrindWhite,
+    imageSource: AiResumeWriter,
     title: "AI Resume Writer",
-    date: "April 2023 - Present",
-    role: "Software Engineer",
-    description: "",
+    titleUrl: "https://ai-resume-builder.github.io/airesumewriter.github.io/",
+    date: "2023",
+    role: "",
+    description:
+      "Implemented asynchronous parallel execution to achieve a 75% reduction in resume generation time.",
     technologies: ["Flutter", "Dart"],
   },
   {
-    imageSource: GeoGrindWhite,
-    title: "AI Resume Writer",
-    date: "April 2023 - Present",
-    role: "Software Engineer",
-    description: "",
-    technologies: ["Flutter", "Dart"],
+    imageSource: PayPalWhite,
+    title: "PayPal Data Analysis",
+    titleUrl:
+      "https://colab.research.google.com/drive/1DnyL-g3GiQQfkA77WT_Kbfq_3XEMaFs7?usp=sharing",
+    date: "2022",
+    role: "",
+    description:
+      "Analyzed transactions for my e-commerce business which generated $30,000+ in profit.",
+    technologies: ["Python", "Google Colab", "Pandas", "Matplotlib", "Prophet"],
   },
   {
-    imageSource: GeoGrindWhite,
-    title: "AI Resume Writer",
-    date: "April 2023 - Present",
-    role: "Software Engineer",
-    description: "",
-    technologies: ["Flutter", "Dart"],
+    imageSource: DiscordWhite,
+    title: "Del Bot",
+    titleUrl: "https://github.com/del8527/del-bot",
+    date: "2022",
+    role: "",
+    description:
+      "Developed a Discord bot to automate processes in Pit Discord servers, used by nearly 8000 users.",
+    technologies: ["Javascript", "Node.js", "Discord.js", "Axios"],
   },
 ];
