@@ -6,7 +6,7 @@ interface ICardProps {
   title: string;
   date?: string;
   role?: string;
-  description: string;
+  description: JSX.Element;
   technologies: Array<string>;
 }
 

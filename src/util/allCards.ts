@@ -6,7 +6,7 @@ export type SingleCard = {
   title: string;
   date?: string;
   role?: string;
-  description: string;
+  description: JSX.Element;
   technologies: Array<string>;
 };
 export const ExperienceCards: Array<SingleCard> = [
