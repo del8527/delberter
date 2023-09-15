@@ -4,7 +4,8 @@ import styles from "./Projects.module.scss";
 
 function Projects() {
   return (
-    <div className={styles.Experience}>
+    <div className={styles.Projects}>
+      <h1 className={styles.Projects__header}>Projects</h1>
       <Cards cards={ProjectCards} />
     </div>
   );

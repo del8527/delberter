@@ -1,14 +1,6 @@
+import { SingleCard } from "../../../util/allCards";
 import styles from "./Card.module.scss";
 import { useRef, useState } from "react";
-
-interface ICardProps {
-  imageSource: string;
-  title: string;
-  date?: string;
-  role?: string;
-  description: string;
-  technologies: Array<string>;
-}
 
 function Card({
   imageSource,
@@ -17,7 +9,7 @@ function Card({
   role,
   description,
   technologies,
-}: ICardProps) {
+}: SingleCard) {
   const cardRef = useRef(null);
   const [cardCharacters, setCardCharacters] = useState<string>("");
   const [cardXPosition, setCardXPosition] = useState<number>(0);

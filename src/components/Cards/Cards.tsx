@@ -3,10 +3,10 @@ import Grid from "../Grid/Grid";
 import Card from "./Card/Card";
 import styles from "./Cards.module.scss";
 
-interface ICardProps {
+interface ICardsProps {
   cards: Array<SingleCard>;
 }
-function Cards({ cards }: ICardProps) {
+function Cards({ cards }: ICardsProps) {
   return (
     <div className={styles.Cards}>
       <div className={styles.Cards__content}>
