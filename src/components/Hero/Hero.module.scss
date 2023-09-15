@@ -1,16 +1,10 @@
 .Hero {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   align-items: center;
   justify-content: center;
-  margin: 0 2rem;
+  margin: -4.8rem 2rem 0 2rem;
 
-  background: radial-gradient(
-    140% 107.13% at 50% 10%,
-    transparent 37.41%,
-    rgb(141, 51, 238) 69.27%,
-    #fff 100%
-  );
   overflow: hidden;
   position: relative;
   color: white;
@@ -35,16 +29,28 @@
     font-weight: 300;
     margin: 0;
   }
+
+  background: radial-gradient(
+    140% 107.13% at 50% 10%,
+    transparent 37.41%,
+    rgb(141, 51, 238) 69.27%,
+    #fff 100%
+  );
 }
 
-@media (max-width: 999px) {
+@media (max-width: 599px) {
   .Hero {
     margin: 0;
     height: 85vh;
-
     &__title {
-      font-size: 5em;
+      font-size: 3em;
     }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+  .Hero__title {
+    font-size: 5em;
   }
 }
 

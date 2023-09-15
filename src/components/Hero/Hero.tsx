@@ -4,7 +4,7 @@ import styles from "./Hero.module.scss";
 
 function Hero() {
   return (
-    <div className={styles.Hero} id="#hero">
+    <div className={styles.Hero} id="hero">
       <div className={styles.Hero__maxWidthWrapper}>
         <h1 className={styles.Hero__title}>
           Hi, I'm
@@ -25,8 +25,9 @@ function Hero() {
             texts={[
               "Third Year @ UWaterloo",
               "Software Engineer",
-              "Rock Climber",
               "Math Lover",
+              "Rock Climber",
+              "Badminton Player",
             ]}
             characterStyles={
               {

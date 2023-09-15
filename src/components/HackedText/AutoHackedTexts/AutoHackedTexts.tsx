@@ -18,7 +18,7 @@ function AutoHackedTexts({ texts, characterStyles }: IAutoHackedTextsProps) {
 
         return previousIndex + 1;
       });
-    }, 3000);
+    }, 2500);
 
     return () => {
       clearInterval(interval);

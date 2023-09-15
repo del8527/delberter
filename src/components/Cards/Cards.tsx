@@ -5,9 +5,9 @@ import styles from "./Cards.module.scss";
 
 interface ICardsProps {
   cards: Array<SingleCard>;
-  short: boolean;
+  short?: boolean;
 }
-function Cards({ cards, short }: ICardsProps) {
+function Cards({ cards, short = false }: ICardsProps) {
   return (
     <div className={styles.Cards}>
       <div className={styles.Cards__content}>
