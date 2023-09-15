@@ -6,9 +6,9 @@ import AiResumeWriter from "../assets/AiResumeWriter.svg";
 import PayPalWhite from "../assets/PayPalWhite.svg";
 import DiscordWhite from "../assets/DiscordWhite.svg";
 export type SingleCard = {
-  imageSource: string;
+  imageSource?: string;
   title: string;
-  titleUrl: string;
+  titleUrl?: string;
   date?: string;
   role?: string;
   description: string;
@@ -111,34 +111,48 @@ export const BigProjectCards: Array<SingleCard> = [
 
 export const SmallProjectCards: Array<SingleCard> = [
   {
-    imageSource: AiResumeWriter,
-    title: "AI Resume Writer",
-    titleUrl: "https://ai-resume-builder.github.io/airesumewriter.github.io/",
-    date: "2023",
+    imageSource: "",
+    title: "Personal Website",
+    titleUrl: "",
+    date: "",
     role: "",
-    description:
-      "Implemented asynchronous parallel execution to achieve a 75% reduction in resume generation time.",
-    technologies: ["Flutter", "Dart"],
+    description: "You're looking at it right now!",
+    technologies: ["React", "TypeScript", "Sass"],
   },
   {
-    imageSource: PayPalWhite,
-    title: "PayPal Data Analysis",
-    titleUrl:
-      "https://colab.research.google.com/drive/1DnyL-g3GiQQfkA77WT_Kbfq_3XEMaFs7?usp=sharing",
-    date: "2022",
+    imageSource: "",
+    title: "Sort Visualizer",
+    titleUrl: "https://github.com/del8527/Sort-Visualizer",
+    date: "",
     role: "",
-    description:
-      "Analyzed transactions for my e-commerce business which generated $30,000+ in profit.",
-    technologies: ["Python", "Google Colab", "Pandas", "Matplotlib", "Prophet"],
+    description: "Visualizer for classic sorting algorithms.",
+    technologies: ["React", "JavaScript"],
   },
   {
-    imageSource: DiscordWhite,
-    title: "Del Bot",
-    titleUrl: "https://github.com/del8527/del-bot",
-    date: "2022",
+    imageSource: "",
+    title: "Type Testing Website",
+    titleUrl: "https://github.com/del8527/typing",
+    date: "",
     role: "",
-    description:
-      "Developed a Discord bot to automate processes in Pit Discord servers, used by nearly 8000 users.",
-    technologies: ["Javascript", "Node.js", "Discord.js", "Axios"],
+    description: "Website to test your typing speed.",
+    technologies: ["React", "JavaScript", "Node", "Bootstrap"],
+  },
+  {
+    imageSource: "",
+    title: "Skiing is Life",
+    titleUrl: "https://del8527.github.io/",
+    date: "",
+    role: "",
+    description: "Static website to display information all about skiing.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    imageSource: "",
+    title: "Watopoly",
+    titleUrl: "",
+    date: "",
+    role: "",
+    description: "Waterloo-themed monopoly.",
+    technologies: ["C++"],
   },
 ];
