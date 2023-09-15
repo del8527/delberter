@@ -4,7 +4,7 @@ import styles from "./Hero.module.scss";
 
 function Hero() {
   return (
-    <div className={styles.Hero} id="#hero">
+    <div className={styles.Hero} id="hero">
       <div className={styles.Hero__maxWidthWrapper}>
         <h1 className={styles.Hero__title}>
           Hi, I'm

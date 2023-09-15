@@ -3,7 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 function Footer() {
   return (
-    <div className={styles.Footer}>
+    <div className={styles.Footer} id="contact">
       <a href="mailto: d45luo@uwaterloo.ca">
         <MdEmail size="2em" className={styles.Footer__icon} />
       </a>
