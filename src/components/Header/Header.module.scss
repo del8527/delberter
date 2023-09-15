@@ -48,3 +48,18 @@
     }
   }
 }
+
+@media (max-width: 599px) {
+  .Navigation__navbar {
+    gap: 0.8rem;
+    padding: 0 1.2rem;
+    font-size: 12px;
+  }
+}
+@media (min-width: 600px) and (max-width: 999px) {
+  .Navigation__navbar {
+    gap: 1rem;
+    padding: 0 1.4rem;
+    font-size: 14px;
+  }
+}
