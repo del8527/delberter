@@ -88,9 +88,13 @@ function Card({
       </div>
       <div className={styles.MetaContainer}>
         <div className={styles.MetaContainer__title}>
-          <a href={titleUrl} target="_blank" rel="noreferrer noopener">
-            <HoverHackedText text={title} />
-          </a>
+          {titleUrl ? (
+            <a href={titleUrl} target="_blank" rel="noreferrer noopener">
+              <HoverHackedText text={title} />
+            </a>
+          ) : (
+            <span>{title}</span>
+          )}
           <span className={styles.MetaContainer__title__date}>{date}</span>
         </div>
         <span className={styles.MetaContainer__role}>{role}</span>

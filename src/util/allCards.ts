@@ -80,7 +80,7 @@ export const BigProjectCards: Array<SingleCard> = [
     imageSource: AiResumeWriter,
     title: "AI Resume Writer",
     titleUrl: "https://ai-resume-builder.github.io/airesumewriter.github.io/",
-    date: "2023",
+    date: "",
     role: "",
     description:
       "Implemented asynchronous parallel execution to achieve a 75% reduction in resume generation time.",
@@ -91,7 +91,7 @@ export const BigProjectCards: Array<SingleCard> = [
     title: "PayPal Data Analysis",
     titleUrl:
       "https://colab.research.google.com/drive/1DnyL-g3GiQQfkA77WT_Kbfq_3XEMaFs7?usp=sharing",
-    date: "2022",
+    date: "",
     role: "",
     description:
       "Analyzed transactions for my e-commerce business which generated $30,000+ in profit.",
@@ -101,7 +101,7 @@ export const BigProjectCards: Array<SingleCard> = [
     imageSource: DiscordWhite,
     title: "Del Bot",
     titleUrl: "https://github.com/del8527/del-bot",
-    date: "2022",
+    date: "",
     role: "",
     description:
       "Developed a Discord bot to automate processes in Pit Discord servers, used by nearly 8000 users.",
@@ -113,7 +113,7 @@ export const SmallProjectCards: Array<SingleCard> = [
   {
     imageSource: "",
     title: "Personal Website",
-    titleUrl: "",
+    titleUrl: "https://delberter.com/",
     date: "",
     role: "",
     description: "You're looking at it right now!",
@@ -139,20 +139,20 @@ export const SmallProjectCards: Array<SingleCard> = [
   },
   {
     imageSource: "",
+    title: "Watopoly",
+    titleUrl: "",
+    date: "",
+    role: "",
+    description: "Monopoly but Waterloo-themed.",
+    technologies: ["C++"],
+  },
+  {
+    imageSource: "",
     title: "Skiing is Life",
     titleUrl: "https://del8527.github.io/",
     date: "",
     role: "",
     description: "Static website to display information all about skiing.",
     technologies: ["HTML", "CSS", "JavaScript"],
-  },
-  {
-    imageSource: "",
-    title: "Watopoly",
-    titleUrl: "",
-    date: "",
-    role: "",
-    description: "Waterloo-themed monopoly.",
-    technologies: ["C++"],
   },
 ];
