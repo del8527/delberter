@@ -1,0 +1,19 @@
+.Experience {
+  position: relative;
+  padding-top: 8rem;
+
+  &__header {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto 2.4rem auto;
+    background: radial-gradient(
+      45% 100% at 50% 50%,
+      #fff 30%,
+      hsla(0, 0%, 100%, 0.4) 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
+  }
+}

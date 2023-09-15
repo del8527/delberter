@@ -1,13 +1,16 @@
-import { ExperienceCards } from "../../util/allCards";
+import { SingleCard } from "../../util/allCards";
 import Grid from "../Grid/Grid";
 import Card from "./Card/Card";
 import styles from "./Cards.module.scss";
 
-function Cards() {
+interface ICardsProps {
+  cards: Array<SingleCard>;
+}
+function Cards({ cards }: ICardsProps) {
   return (
     <div className={styles.Cards}>
       <div className={styles.Cards__content}>
-        {ExperienceCards.map((cardData) => {
+        {cards.map((cardData) => {
           return (
             <Grid key={cardData.title}>
               <Card {...cardData} />

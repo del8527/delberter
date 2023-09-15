@@ -1,7 +1,5 @@
-import Grid from "../Grid/Grid";
 import AutoHackedText from "../HackedText/AutoHackedTexts/AutoHackedText/AutoHackedText";
 import AutoHackedTexts from "../HackedText/AutoHackedTexts/AutoHackedTexts";
-import HoverHackedText from "../HackedText/HoverHackedText";
 import styles from "./Hero.module.scss";
 
 function Hero() {
@@ -33,7 +31,6 @@ function Hero() {
             characterStyles={
               {
                 fontSize: "1em",
-                width: "0.6em",
                 fontWeight: "900",
               } as React.CSSProperties
             }

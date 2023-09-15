@@ -1,5 +1,6 @@
 .HoverHackedText {
-  font-family: "Space Mono", monospace;
+  display: inline-block;
+  white-space: pre;
 
   &__character {
     display: inline-block;

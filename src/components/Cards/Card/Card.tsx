@@ -1,23 +1,17 @@
+import { SingleCard } from "../../../util/allCards";
+import HoverHackedText from "../../HackedText/HoverHackedText";
 import styles from "./Card.module.scss";
 import { useRef, useState } from "react";
-
-interface ICardProps {
-  imageSource: string;
-  title: string;
-  date?: string;
-  role?: string;
-  description: string;
-  technologies: Array<string>;
-}
 
 function Card({
   imageSource,
   title,
+  titleUrl,
   date,
   role,
   description,
   technologies,
-}: ICardProps) {
+}: SingleCard) {
   const cardRef = useRef(null);
   const [cardCharacters, setCardCharacters] = useState<string>("");
   const [cardXPosition, setCardXPosition] = useState<number>(0);
@@ -81,7 +75,9 @@ function Card({
       </div>
       <div className={styles.MetaContainer}>
         <div className={styles.MetaContainer__title}>
-          {title}
+          <a href={titleUrl} target="_blank" rel="noreferrer noopener">
+            <HoverHackedText text={title} />
+          </a>
           <span className={styles.MetaContainer__title__date}>{date}</span>
         </div>
         <span className={styles.MetaContainer__role}>{role}</span>
