@@ -63,3 +63,30 @@ export const ExperienceCards: Array<SingleCard> = [
     ],
   },
 ];
+
+export const ProjectCards: Array<SingleCard> = [
+  {
+    imageSource: GeoGrindWhite,
+    title: "AI Resume Writer",
+    date: "April 2023 - Present",
+    role: "Software Engineer",
+    description: "",
+    technologies: ["Flutter", "Dart"],
+  },
+  {
+    imageSource: GeoGrindWhite,
+    title: "AI Resume Writer",
+    date: "April 2023 - Present",
+    role: "Software Engineer",
+    description: "",
+    technologies: ["Flutter", "Dart"],
+  },
+  {
+    imageSource: GeoGrindWhite,
+    title: "AI Resume Writer",
+    date: "April 2023 - Present",
+    role: "Software Engineer",
+    description: "",
+    technologies: ["Flutter", "Dart"],
+  },
+];
