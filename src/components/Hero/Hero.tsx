@@ -9,7 +9,8 @@ function Hero() {
     <div className={styles.Hero} id="#hero">
       <div className={styles.Hero__maxWidthWrapper}>
         <h1 className={styles.Hero__title}>
-          Hi, I'm{" "}
+          Hi, I'm
+          <br />
           <AutoHackedText
             text="Delbert Luo"
             characterStyles={

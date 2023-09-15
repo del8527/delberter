@@ -3,7 +3,6 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-
   margin: 0 2rem;
 
   overflow: hidden;
@@ -37,5 +36,21 @@
     rgb(141, 51, 238) 69.27%,
     #fff 100%
   );
+}
 
+@media (max-width: 999px) {
+  .Hero {
+    margin: 0;
+    height: 85vh;
+
+    &__title {
+      font-size: 5em;
+    }
+  }
+}
+
+@media (min-width: 2000px) {
+  .Hero {
+    height: 80vh;
+  }
 }
