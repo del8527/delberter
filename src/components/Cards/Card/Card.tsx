@@ -1,4 +1,5 @@
 import { SingleCard } from "../../../util/allCards";
+import HoverHackedText from "../../HackedText/HoverHackedText";
 import styles from "./Card.module.scss";
 import { useRef, useState } from "react";
 
@@ -75,7 +76,7 @@ function Card({
       <div className={styles.MetaContainer}>
         <div className={styles.MetaContainer__title}>
           <a href={titleUrl} target="_blank" rel="noreferrer noopener">
-            {title}
+            <HoverHackedText text={title} />
           </a>
           <span className={styles.MetaContainer__title__date}>{date}</span>
         </div>
