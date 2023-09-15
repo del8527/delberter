@@ -59,7 +59,7 @@ export const ExperienceCards: Array<SingleCard> = [
     title: "GeoGrind",
     titleUrl: "https://about-geogrind.delberter.com/",
     date: "Apr 2023 - Present",
-    role: "Founder | Engineer Lead, Desktop and Web",
+    role: "Engineer Lead, Desktop and Web",
     description:
       "Established 90% of our codebase/backend, leading to the successful launch of GeoGrind's beta in September.",
     technologies: [
