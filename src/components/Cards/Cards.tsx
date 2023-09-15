@@ -5,15 +5,16 @@ import styles from "./Cards.module.scss";
 
 interface ICardsProps {
   cards: Array<SingleCard>;
+  short: boolean;
 }
-function Cards({ cards }: ICardsProps) {
+function Cards({ cards, short }: ICardsProps) {
   return (
     <div className={styles.Cards}>
       <div className={styles.Cards__content}>
         {cards.map((cardData) => {
           return (
             <Grid key={cardData.title}>
-              <Card {...cardData} />
+              <Card {...cardData} short={short} />
             </Grid>
           );
         })}

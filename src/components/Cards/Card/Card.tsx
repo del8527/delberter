@@ -3,6 +3,10 @@ import HoverHackedText from "../../HackedText/HoverHackedText";
 import styles from "./Card.module.scss";
 import { useRef, useState } from "react";
 
+interface ICardsProps extends SingleCard {
+  short: boolean;
+}
+
 function Card({
   imageSource,
   title,
@@ -11,7 +15,8 @@ function Card({
   role,
   description,
   technologies,
-}: SingleCard) {
+  short,
+}: ICardsProps) {
   const cardRef = useRef(null);
   const [cardCharacters, setCardCharacters] = useState<string>("");
   const [cardXPosition, setCardXPosition] = useState<number>(0);
@@ -64,14 +69,22 @@ function Card({
         onTouchMove={(e: React.TouchEvent) => {
           handleTouchMove(e);
         }}
+        style={short ? { aspectRatio: "auto" } : {}}
       >
-        <div className={styles.Card__image}>
-          <img src={imageSource} alt="image" />
-        </div>
-        <div className={styles.Card__gradient}></div>
-        <div className={styles.Card__characters} style={cardCharactersStyle}>
-          {cardCharacters}
-        </div>
+        {!short && (
+          <>
+            <div className={styles.Card__image}>
+              <img src={imageSource} alt="image" />
+            </div>
+            <div className={styles.Card__gradient}></div>
+            <div
+              className={styles.Card__characters}
+              style={cardCharactersStyle}
+            >
+              {cardCharacters}
+            </div>
+          </>
+        )}
       </div>
       <div className={styles.MetaContainer}>
         <div className={styles.MetaContainer__title}>
