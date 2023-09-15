@@ -1,3 +1,4 @@
+import HoverHackedText from "../HackedText/HoverHackedText";
 import styles from "./Header.module.scss";
 function Header() {
   return (
@@ -6,22 +7,22 @@ function Header() {
         <ul className={styles.Navigation__navbar}>
           <li className={styles.Navigation__item}>
             <a href="#hero" className={styles.Navigation__item__link}>
-              Home
+              <HoverHackedText text="Home" />
             </a>
           </li>
           <li className={styles.Navigation__item}>
             <a href="#experience" className={styles.Navigation__item__link}>
-              Experience
+              <HoverHackedText text="Experience" />
             </a>
           </li>
           <li className={styles.Navigation__item}>
             <a href="#projects" className={styles.Navigation__item__link}>
-              Projects
+              <HoverHackedText text="Projects" />
             </a>
           </li>
           <li className={styles.Navigation__item}>
             <a href="#contact" className={styles.Navigation__item__link}>
-              Contact
+              <HoverHackedText text="Contact" />
             </a>
           </li>
         </ul>

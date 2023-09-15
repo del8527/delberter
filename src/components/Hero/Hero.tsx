@@ -25,8 +25,9 @@ function Hero() {
             texts={[
               "Third Year @ UWaterloo",
               "Software Engineer",
-              "Rock Climber",
               "Math Lover",
+              "Rock Climber",
+              "Badminton Player",
             ]}
             characterStyles={
               {

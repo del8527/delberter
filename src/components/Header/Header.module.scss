@@ -14,16 +14,17 @@
   justify-content: center;
 
   &__navbar {
+    width: 400px;
     display: flex;
-    height: 2.8rem;
-    gap: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
 
+    height: 2.8rem;
     list-style: none;
     z-index: 100;
-    display: flex;
     overflow: hidden;
     position: relative;
-    align-items: center;
     pointer-events: all;
     border-radius: 1.6rem;
     background: rgba(1, 3, 20, 0.95);
@@ -51,6 +52,7 @@
 
 @media (max-width: 599px) {
   .Navigation__navbar {
+    width: 250px;
     gap: 0.8rem;
     padding: 0 1.2rem;
     font-size: 12px;
@@ -58,6 +60,7 @@
 }
 @media (min-width: 600px) and (max-width: 999px) {
   .Navigation__navbar {
+    width: 300px;
     gap: 1rem;
     padding: 0 1.4rem;
     font-size: 14px;
