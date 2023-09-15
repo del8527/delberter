@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "./AutoHackedTexts.module.scss";
+// import styles from "./AutoHackedTexts.module.scss";
 import AutoHackedText from "./AutoHackedText/AutoHackedText";
 
 interface IAutoHackedTextsProps {
