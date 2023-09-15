@@ -42,7 +42,7 @@ export const ExperienceCards: Array<SingleCard> = [
     date: "Sep 2022 - Dec 2022",
     role: "Full-stack Developer",
     description:
-      "Developed core product features for creative automation, used by 250+ media agencies and publishers.",
+      "Developed core product features for creative automation used by 250+ media agencies and publishers.",
     technologies: [
       "React",
       "TypeScript",
@@ -58,10 +58,10 @@ export const ExperienceCards: Array<SingleCard> = [
     imageSource: GeoGrindWhite,
     title: "GeoGrind",
     titleUrl: "https://about-geogrind.delberter.com/",
-    date: "April 2023 - Present",
-    role: "Founder - SWE Lead, Desktop and Web",
+    date: "Apr 2023 - Present",
+    role: "Founder | Engineer Lead, Desktop and Web",
     description:
-      "Established 90% of our codebase/backend, leading to the successful launch of GeoGrind's beta in Sep.",
+      "Established 90% of our codebase/backend, leading to the successful launch of GeoGrind's beta in September.",
     technologies: [
       "React",
       "TypeScript",
