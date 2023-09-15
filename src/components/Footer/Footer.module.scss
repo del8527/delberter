@@ -1,0 +1,19 @@
+.Footer {
+  text-align: center;
+  color: #fff;
+  background: radial-gradient(
+    150% 110% at 50% 20%,
+    transparent 40%,
+    rgb(141, 51, 238) 100%,
+    #fff 0
+  );
+  padding: 4rem;
+
+  &__icon {
+    margin: 0 1rem;
+    transition: 300ms;
+    &:hover {
+      color: #956fd6;
+    }
+  }
+}
