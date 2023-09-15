@@ -5,6 +5,7 @@ import { useRef, useState } from "react";
 function Card({
   imageSource,
   title,
+  titleUrl,
   date,
   role,
   description,
@@ -73,7 +74,9 @@ function Card({
       </div>
       <div className={styles.MetaContainer}>
         <div className={styles.MetaContainer__title}>
-          {title}
+          <a href={titleUrl} target="_blank" rel="noreferrer noopener">
+            {title}
+          </a>
           <span className={styles.MetaContainer__title__date}>{date}</span>
         </div>
         <span className={styles.MetaContainer__role}>{role}</span>
