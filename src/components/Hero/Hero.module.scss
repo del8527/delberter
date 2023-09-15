@@ -38,14 +38,19 @@
   );
 }
 
-@media (max-width: 999px) {
+@media (max-width: 599px) {
   .Hero {
     margin: 0;
     height: 85vh;
-
     &__title {
-      font-size: 5em;
+      font-size: 3em;
     }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+  .Hero__title {
+    font-size: 5em;
   }
 }
 
