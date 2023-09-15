@@ -25,7 +25,7 @@
   margin: 1rem;
   border-radius: 2rem;
   overflow: hidden;
-  cursor: pointer;
+  cursor: default; // change later once links are added
 
   &__image {
     display: flex;
