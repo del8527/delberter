@@ -9,7 +9,7 @@ const hackedTextEffect = (
 
   const interval = setInterval(() => {
     setHackedText(
-      hackedText.map((character, index) => {
+      hackedText.map((_character, index) => {
         if (index < iterations) {
           return originalText[index];
         } else if (index < originalText.length) {
