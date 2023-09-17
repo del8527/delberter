@@ -87,15 +87,22 @@ function Card({
         )}
       </div>
       <div className={styles.MetaContainer}>
-        <div className={styles.MetaContainer__title}>
+        <div className={styles.MetaContainer__top}>
           {titleUrl ? (
-            <a href={titleUrl} target="_blank" rel="noreferrer noopener">
+            <a
+              className={styles.MetaContainer__top__title}
+              href={titleUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <HoverHackedText text={title} />
             </a>
           ) : (
-            <span>{title}</span>
+            <span className={styles[`MetaContainer__top__title--noLink`]}>
+              {title}
+            </span>
           )}
-          <span className={styles.MetaContainer__title__date}>{date}</span>
+          <span className={styles.MetaContainer__top__date}>{date}</span>
         </div>
         <span className={styles.MetaContainer__role}>{role}</span>
 

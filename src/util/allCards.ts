@@ -109,7 +109,7 @@ export const BigProjectCards: Array<SingleCard> = [
     role: "",
     description:
       "Implemented asynchronous parallel execution to achieve a 75% reduction in resume generation time.",
-    technologies: ["Flutter", "Dart"],
+    technologies: ["Flutter", "Dart", "GPT"],
   },
 
   {
@@ -126,15 +126,6 @@ export const BigProjectCards: Array<SingleCard> = [
 
 export const SmallProjectCards: Array<SingleCard> = [
   {
-    imageSource: "",
-    title: "Personal Website",
-    titleUrl: "https://delberter.com/",
-    date: "",
-    role: "",
-    description: "You're looking at it right now!",
-    technologies: ["React", "TypeScript", "Sass"],
-  },
-  {
     imageSource: PayPalWhite, // not used right now
     title: "PayPal Data Analysis",
     titleUrl:
@@ -144,6 +135,15 @@ export const SmallProjectCards: Array<SingleCard> = [
     description:
       "Analyzed transactions for my e-commerce business which generated $30,000+ in profit.",
     technologies: ["Python", "Google Colab", "Pandas", "Matplotlib"],
+  },
+  {
+    imageSource: "",
+    title: "Personal Website",
+    titleUrl: "https://delberter.com/",
+    date: "",
+    role: "",
+    description: "Built my portfolio website, you're looking at it right now!",
+    technologies: ["React", "TypeScript", "Sass"],
   },
   {
     imageSource: "",
