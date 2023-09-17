@@ -2,6 +2,7 @@ import FordProWhite from "../assets/FordProWhite.svg";
 import NovaWhite from "../assets/NovaWhite.svg";
 import GeoGrindWhite from "../assets/GeoGrindWhite.svg";
 
+import NoteNexusWhite from "../assets/NoteNexusWhite.svg";
 import AiResumeWriter from "../assets/AiResumeWriter.svg";
 import PayPalWhite from "../assets/PayPalWhite.svg";
 import DiscordWhite from "../assets/DiscordWhite.svg";
@@ -31,7 +32,7 @@ export const ExperienceCards: Array<SingleCard> = [
       "Express",
       "Jest",
       "Nx",
-      "Google Cloud Platform",
+      "GCP",
       "Docker",
     ],
   },
@@ -69,13 +70,37 @@ export const ExperienceCards: Array<SingleCard> = [
       "Electron",
       "Next",
       "Firebase",
-      "Google Cloud Platform",
+      "GCP",
       "Cloudflare",
     ],
   },
 ];
 
 export const BigProjectCards: Array<SingleCard> = [
+  {
+    imageSource: NoteNexusWhite,
+    title: "NoteNexus",
+    titleUrl: "https://devpost.com/software/notenexus",
+    date: "",
+    role: "",
+    description:
+      // "Used LLMs and vector indexing to explore insights about noteslink notes within our custom notetaking app",
+      "Created a smart notetaking app that uses LLMs and vector indexing to revolutionize the way you make notes.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Go",
+      "MongoDB",
+      "Python",
+      "Flask",
+      "Next",
+      "Elasticsearch",
+      "GCP",
+      "Cohere",
+      "Hugging Face",
+      "Sentence Transformers",
+    ],
+  },
   {
     imageSource: AiResumeWriter,
     title: "AI Resume Writer",
@@ -86,17 +111,7 @@ export const BigProjectCards: Array<SingleCard> = [
       "Implemented asynchronous parallel execution to achieve a 75% reduction in resume generation time.",
     technologies: ["Flutter", "Dart"],
   },
-  {
-    imageSource: PayPalWhite,
-    title: "PayPal Data Analysis",
-    titleUrl:
-      "https://colab.research.google.com/drive/1DnyL-g3GiQQfkA77WT_Kbfq_3XEMaFs7?usp=sharing",
-    date: "",
-    role: "",
-    description:
-      "Analyzed transactions for my e-commerce business which generated $30,000+ in profit.",
-    technologies: ["Python", "Google Colab", "Pandas", "Matplotlib", "Prophet"],
-  },
+
   {
     imageSource: DiscordWhite,
     title: "Del Bot",
@@ -105,7 +120,7 @@ export const BigProjectCards: Array<SingleCard> = [
     role: "",
     description:
       "Developed a Discord bot to automate processes in Pit Discord servers, used by nearly 8000 users.",
-    technologies: ["Javascript", "Node.js", "Discord.js", "Axios"],
+    technologies: ["Javascript", "Node.js", "Discord.js"],
   },
 ];
 
@@ -118,6 +133,17 @@ export const SmallProjectCards: Array<SingleCard> = [
     role: "",
     description: "You're looking at it right now!",
     technologies: ["React", "TypeScript", "Sass"],
+  },
+  {
+    imageSource: PayPalWhite, // not used right now
+    title: "PayPal Data Analysis",
+    titleUrl:
+      "https://colab.research.google.com/drive/1DnyL-g3GiQQfkA77WT_Kbfq_3XEMaFs7?usp=sharing",
+    date: "",
+    role: "",
+    description:
+      "Analyzed transactions for my e-commerce business which generated $30,000+ in profit.",
+    technologies: ["Python", "Google Colab", "Pandas", "Matplotlib"],
   },
   {
     imageSource: "",
