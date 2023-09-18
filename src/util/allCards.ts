@@ -71,6 +71,7 @@ export const ExperienceCards: Array<SingleCard> = [
       "Next",
       "Firebase",
       "GCP",
+      "Python",
       "Cloudflare",
     ],
   },
