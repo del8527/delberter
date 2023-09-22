@@ -26,6 +26,7 @@ function Hero() {
               "Third Year @ UWaterloo",
               "Software Engineer",
               "Math Lover",
+              "Soccer Captain",
               "Rock Climber",
               "Badminton Player",
             ]}
