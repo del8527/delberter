@@ -1,3 +1,5 @@
+import "../../public/956fd6.png"
+
 import FordProWhite from "../assets/FordProWhite.svg";
 import NovaWhite from "../assets/NovaWhite.svg";
 import GeoGrindWhite from "../assets/GeoGrindWhite.svg";
@@ -16,6 +18,17 @@ export type SingleCard = {
   technologies: Array<string>;
 };
 export const ExperienceCards: Array<SingleCard> = [
+  {
+    imageSource: "956fd6.png",
+    title: "...",
+    titleUrl: "",
+    date: "Incoming",
+    role: "Incoming Software Engineering Intern",
+    description:
+      "Coming soon",
+    technologies: [
+    ],
+  },
   {
     imageSource: FordProWhite,
     title: "Ford Pro",
