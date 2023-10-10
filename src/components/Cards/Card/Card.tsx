@@ -75,7 +75,6 @@ function Card({
           <>
             <div className={styles.Card__image}>
               <img src={imageSource} alt="image" />
-              {/* <img src={imageSource} alt="image" /> */}
             </div>
             <div className={styles.Card__gradient}></div>
             <div
