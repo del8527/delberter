@@ -1,5 +1,6 @@
 import "../../public/956fd6.png"
 
+import ETHGlobalColour from "../assets/ETHGlobalColour.svg"
 import FordProWhite from "../assets/FordProWhite.svg";
 import NovaWhite from "../assets/NovaWhite.svg";
 import GeoGrindWhite from "../assets/GeoGrindWhite.svg";
@@ -19,11 +20,11 @@ export type SingleCard = {
 };
 export const ExperienceCards: Array<SingleCard> = [
   {
-    imageSource: "956fd6.png",
-    title: "...",
-    titleUrl: "",
-    date: "Incoming",
-    role: "Incoming Software Engineering Intern",
+    imageSource: ETHGlobalColour,
+    title: "ETHGlobal",
+    titleUrl: "https://ethglobal.com/",
+    date: "Jan 2024 - April 2024",
+    role: "Software Engineering Intern",
     description:
       "Coming soon",
     technologies: [
