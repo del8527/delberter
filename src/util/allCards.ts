@@ -7,6 +7,7 @@ import NoteNexusWhite from "../assets/NoteNexusWhite.svg";
 import AiResumeWriter from "../assets/AiResumeWriter.svg";
 import PayPalWhite from "../assets/PayPalWhite.svg";
 // import DiscordWhite from "../assets/DiscordWhite.svg";
+
 export type SingleCard = {
   imageSource?: string;
   title: string;
