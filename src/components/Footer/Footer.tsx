@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className={styles.Footer} id="contact">
       <a
-        href="mailto: d45luo@uwaterloo.ca"
+        href="mailto: delbertluo.work@gmail.com"
         target="_blank"
         rel="noreferrer noopener"
       >
