@@ -23,12 +23,13 @@ function Hero() {
         <span className={styles.Hero__subtitle}>
           <AutoHackedTexts
             texts={[
-              "Software Engineer @ ETHGlobal",
-              "Third Year @ UWaterloo",
-              "Math Lover",
-              "Soccer Captain",
+              "Prev. SWE Intern @ Faire, ETHGlobal",
+              "Fourth Year @ UWaterloo",
+              "Soccer and Dodgeball Captain",
+              "Dog Lover",
               "Rock Climber",
-              "Badminton Player",
+              "Math Lover",
+              // "Badminton Player",
             ]}
             characterStyles={
               {

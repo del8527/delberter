@@ -1,3 +1,4 @@
+import FaireWhite from "../assets/FaireWhite.svg";
 import ETHGlobalWhite from "../assets/ETHGlobalWhite.svg";
 import FordProWhite from "../assets/FordProWhite.svg";
 import NovaWhite from "../assets/NovaWhite.svg";
@@ -19,22 +20,52 @@ export type SingleCard = {
 };
 export const ExperienceCards: Array<SingleCard> = [
   {
+    imageSource: FaireWhite,
+    title: "Faire",
+    titleUrl: "https://www.faire.com/",
+    date: "Sep 2024 - Dec 2024",
+    role: "Software Engineering Intern",
+    description:
+      "Worked on the Marketplace Quality Pod, creating many features for our new orders review workflow.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Python",
+      "Kotlin",
+      "Node",
+      "Snowflake",
+      "Datadog",
+      "AWS",
+      "SQL",
+      "Next",
+      "Tailwind",
+      "Styled Components",
+      "Redux",
+      "Jenkins",
+    ],
+  },
+  {
     imageSource: ETHGlobalWhite,
     title: "ETHGlobal",
     titleUrl: "https://ethglobal.com/",
-    date: "Jan 2024 - April 2024",
+    date: "Jan 2024 - May 2024",
     role: "Software Engineering Intern",
-    description: "Building things.",
+    description:
+      "Worked on a little bit of everything, from a new payment request system to developing an e2e CDN system that reduces page load size by 99% through image optimization pipelines.",
     technologies: [
-      "Prisma",
-      "Apollo Client",
-      "GraphQL",
-      "Next",
       "React",
       "TypeScript",
       "Node",
+      "Next",
+      "Prisma",
+      "Apollo Client",
+      "GraphQL",
+      "Python",
+      "MySQL",
+      "SQL",
       "Vercel",
       "Tailwind",
+      "Cloudflare",
     ],
   },
   {
@@ -48,12 +79,15 @@ export const ExperienceCards: Array<SingleCard> = [
     technologies: [
       "React",
       "TypeScript",
+      "Python",
       "Sass",
       "Node",
       "Express",
+      "GCP",
+      "Redis",
+      "SQL",
       "Jest",
       "Nx",
-      "GCP",
       "Docker",
     ],
   },
@@ -62,7 +96,7 @@ export const ExperienceCards: Array<SingleCard> = [
     title: "Nova",
     titleUrl: "https://www.createwithnova.com/",
     date: "Sep 2022 - Dec 2022",
-    role: "Full-stack Developer",
+    role: "Software Engineering Intern",
     description:
       "Developed core product features for creative automation used by 250+ media agencies and publishers.",
     technologies: [
@@ -145,12 +179,12 @@ export const BigProjectCards: Array<SingleCard> = [
     technologies: [
       "React",
       "TypeScript",
+      "Python",
+      "GCP",
       "Sass",
       "Electron",
       "Next",
       "Firebase",
-      "GCP",
-      "Python",
       "Cloudflare",
     ],
   },
@@ -195,7 +229,7 @@ export const SmallProjectCards: Array<SingleCard> = [
     date: "",
     role: "",
     description: "Built my portfolio website, you're looking at it right now!",
-    technologies: ["React", "TypeScript", "Sass"],
+    technologies: ["React", "TypeScript", "Sass", "Vite"],
   },
   {
     imageSource: "",
