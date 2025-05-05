@@ -1,11 +1,17 @@
 import AutoHackedText from "../HackedText/AutoHackedTexts/AutoHackedText/AutoHackedText";
 import AutoHackedTexts from "../HackedText/AutoHackedTexts/AutoHackedTexts";
 import styles from "./Hero.module.scss";
+// import DelbertPFP from "../../assets/Delbert.jpg"
 
 function Hero() {
   return (
     <div className={styles.Hero} id="hero">
       <div className={styles.Hero__maxWidthWrapper}>
+        {/* <img
+          src={DelbertPFP}
+          alt="Delbert Luo"
+          className={styles.Hero__image}
+        /> */}
         <h1 className={styles.Hero__title}>
           Hi, I'm
           <br />
@@ -23,8 +29,7 @@ function Hero() {
         <span className={styles.Hero__subtitle}>
           <AutoHackedTexts
             texts={[
-              "Prev. SWE Intern @ Faire, ETHGlobal",
-              "Fourth Year @ UWaterloo",
+              "Software Eng @ Composer",
               "Soccer and Dodgeball Captain",
               "Dog Lover",
               "Rock Climber",

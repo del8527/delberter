@@ -7,6 +7,7 @@ import GeoGrindWhite from "../assets/GeoGrindWhite.svg";
 import NoteNexusWhite from "../assets/NoteNexusWhite.svg";
 import AiResumeWriter from "../assets/AiResumeWriter.svg";
 import PayPalWhite from "../assets/PayPalWhite.svg";
+import ComposerWhite from "../assets/ComposerWhite.svg"
 // import DiscordWhite from "../assets/DiscordWhite.svg";
 
 export type SingleCard = {
@@ -19,6 +20,26 @@ export type SingleCard = {
   technologies: Array<string>;
 };
 export const ExperienceCards: Array<SingleCard> = [
+  {
+    imageSource: ComposerWhite,
+    title: "Composer",
+    titleUrl: "https://www.composer.trade/",
+    date: "May 2025 - Aug 2025",
+    role: "Software Engineering Intern",
+    description:
+      "Working on a fintech platform that simplifies the creation and automation of advanced trading strategies for modern investors.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Next",
+      "Node",
+      "Python",
+      "Clojure",
+      "Datadog",
+      "Vercel",
+      "Tailwind",
+    ],
+  },
   {
     imageSource: FaireWhite,
     title: "Faire",
@@ -166,7 +187,7 @@ export const BigProjectCards: Array<SingleCard> = [
     role: "",
     description:
       "Implemented asynchronous parallel execution to achieve a 75% reduction in resume generation time.",
-    technologies: ["Flutter", "Dart", "GPT"],
+    technologies: ["Flutter", "Dart", "Python", "GraphQL", "GPT"],
   },
   {
     imageSource: GeoGrindWhite,
