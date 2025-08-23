@@ -7,7 +7,8 @@ import GeoGrindWhite from "../assets/GeoGrindWhite.svg";
 import NoteNexusWhite from "../assets/NoteNexusWhite.svg";
 import AiResumeWriter from "../assets/AiResumeWriter.svg";
 import PayPalWhite from "../assets/PayPalWhite.svg";
-import ComposerWhite from "../assets/ComposerWhite.svg"
+import ComposerWhite from "../assets/ComposerWhite.svg";
+import TeslaWhite from "../assets/TeslaWhite.svg";
 // import DiscordWhite from "../assets/DiscordWhite.svg";
 
 export type SingleCard = {
@@ -21,22 +22,47 @@ export type SingleCard = {
 };
 export const ExperienceCards: Array<SingleCard> = [
   {
+    imageSource: TeslaWhite,
+    title: "Tesla",
+    titleUrl: "https://www.tesla.com/",
+    date: "Sep 2025 - Dec 2025",
+    role: "Software Engineering Intern",
+    description:
+      "Building software to accelerate Tesla's mission of transitioning the world to sustainable energy.",
+    technologies: [
+      "Python",
+      "TypeScript",
+      "React",
+      "FastAPI",
+      "Next",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Pandas",
+      "NumPy",
+      "TailwindCSS",
+      "SQL",
+      "GraphQL",
+    ],
+  },
+  {
     imageSource: ComposerWhite,
     title: "Composer",
     titleUrl: "https://www.composer.trade/",
     date: "May 2025 - Aug 2025",
     role: "Software Engineering Intern",
     description:
-      "Working on a fintech platform that simplifies the creation and automation of advanced trading strategies for modern investors.",
+      "Built Composer's first direct trading interface and options product for their automated trading platform.",
     technologies: [
       "React",
       "TypeScript",
       "Next",
       "Node",
       "Python",
-      "Clojure",
+      "ClojureScript",
+      "Firebase",
+      "GCP",
       "Datadog",
-      "Vercel",
       "Tailwind",
     ],
   },
@@ -156,6 +182,16 @@ export const ExperienceCards: Array<SingleCard> = [
 
 export const BigProjectCards: Array<SingleCard> = [
   {
+    imageSource: AiResumeWriter,
+    title: "AI Resume Writer",
+    titleUrl: "https://ai-resume-builder.github.io/airesumewriter.github.io/",
+    date: "",
+    role: "Software Engineer",
+    description:
+      "Optimized performance for an AI-powered resume generator, contributing to 60k+ downloads and $2k MRR.",
+    technologies: ["Flutter", "Dart", "Python", "GraphQL", "GPT"],
+  },
+  {
     imageSource: NoteNexusWhite,
     title: "NoteNexus",
     titleUrl: "https://devpost.com/software/notenexus",
@@ -180,23 +216,13 @@ export const BigProjectCards: Array<SingleCard> = [
     ],
   },
   {
-    imageSource: AiResumeWriter,
-    title: "AI Resume Writer",
-    titleUrl: "https://ai-resume-builder.github.io/airesumewriter.github.io/",
-    date: "",
-    role: "",
-    description:
-      "Implemented asynchronous parallel execution to achieve a 75% reduction in resume generation time.",
-    technologies: ["Flutter", "Dart", "Python", "GraphQL", "GPT"],
-  },
-  {
     imageSource: GeoGrindWhite,
     title: "GeoGrind",
     titleUrl: "https://about-geogrind.delberter.com/",
     date: "Apr 2023 - Dec 2023",
     role: "Engineer Lead, Desktop and Web",
     description:
-      "Established 90% of our codebase/backend, leading to the successful launch of GeoGrind's beta in September.",
+      "Established 90% of our codebase/backend, leading a team of 10+ to the successful launch of GeoGrind's beta in September.",
     technologies: [
       "React",
       "TypeScript",
