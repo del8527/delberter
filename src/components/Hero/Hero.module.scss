@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    max-width: calc(100% - 2em);
+    width: calc(100% - 2em);
   }
 
   &__image {
@@ -33,6 +33,11 @@
     font-size: 6em;
     font-weight: 400;
     margin: 0;
+
+    &__name {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__subtitle {

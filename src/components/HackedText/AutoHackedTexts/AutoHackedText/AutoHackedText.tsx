@@ -6,13 +6,14 @@ import clsx from "clsx";
 interface IAutoHackedTextProps {
   text: string;
   characterStyles?: React.CSSProperties;
+  hackDuration?: number; // Duration in milliseconds
 }
-function AutoHackedText({ text, characterStyles }: IAutoHackedTextProps) {
+function AutoHackedText({ text, characterStyles, hackDuration = 0 }: IAutoHackedTextProps) {
   const [hackedText, setHackedText] = useState<Array<string>>([...text]);
 
   useEffect(() => {
-    hackedTextEffect(hackedText, setHackedText, text);
-  }, [text]);
+    hackedTextEffect(hackedText, setHackedText, text, hackDuration);
+  }, [text, hackDuration]);
 
   return (
     <div className={styles.AutoHackedText}>
