@@ -14,14 +14,39 @@ function Hero() {
   return (
     <div className={styles.Hero} id="hero">
       <div className={styles.Hero__maxWidthWrapper}>
-        <h1 className={styles.Hero__title}>
-          Hi, I'm
-          <br />
-          <div className={styles.Hero__title__name}>
-            {isMobile ? (
-              <>
+        <div>
+          <h1 className={styles.Hero__title}>
+            Hi, I'm
+            <br />
+            <div className={styles.Hero__title__name}>
+              {isMobile ? (
+                <>
+                  <AutoHackedText
+                    text="Delbert"
+                    characterStyles={
+                      {
+                        fontSize: "1.2em",
+                        fontWeight: "600",
+                        width: "0.6em",
+                      } as React.CSSProperties
+                    }
+                    hackDuration={300}
+                  />
+                  <AutoHackedText
+                    text="Luo"
+                    characterStyles={
+                      {
+                        fontSize: "1.2em",
+                        fontWeight: "600",
+                        width: "0.6em",
+                      } as React.CSSProperties
+                    }
+                    hackDuration={1000}
+                  />
+                </>
+              ) : (
                 <AutoHackedText
-                  text="Delbert"
+                  text="Delbert Luo"
                   characterStyles={
                     {
                       fontSize: "1.2em",
@@ -31,51 +56,28 @@ function Hero() {
                   }
                   hackDuration={300}
                 />
-                <AutoHackedText
-                  text="Luo"
-                  characterStyles={
-                    {
-                      fontSize: "1.2em",
-                      fontWeight: "600",
-                      width: "0.6em",
-                    } as React.CSSProperties
-                  }
-                  hackDuration={1000}
-                />
-              </>
-            ) : (
-              <AutoHackedText
-                text="Delbert Luo"
-                characterStyles={
-                  {
-                    fontSize: "1.2em",
-                    fontWeight: "600",
-                    width: "0.6em",
-                  } as React.CSSProperties
-                }
-                hackDuration={300}
-              />
-            )}
-          </div>
-        </h1>
-        <span className={styles.Hero__subtitle}>
-          <AutoHackedTexts
-            texts={[
-              "Software Eng Intern @ Tesla",
-              "Soccer and Dodgeball Captain",
-              "Dog Lover",
-              "Rock Climber",
-              "Math Lover",
-              // "Badminton Player",
-            ]}
-            characterStyles={
-              {
-                fontSize: "1em",
-                fontWeight: "900",
-              } as React.CSSProperties
-            }
-          />
-        </span>
+              )}
+            </div>
+          </h1>
+          <span className={styles.Hero__subtitle}>
+            <AutoHackedTexts
+              texts={[
+                "Software Eng Intern @ Tesla",
+                "Soccer and Dodgeball Captain",
+                "Dog Lover",
+                "Rock Climber",
+                "Math Lover",
+                // "Badminton Player",
+              ]}
+              characterStyles={
+                {
+                  fontSize: "1em",
+                  fontWeight: "900",
+                } as React.CSSProperties
+              }
+            />
+          </span>
+        </div>
       </div>
     </div>
   );

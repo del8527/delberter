@@ -6,7 +6,7 @@ export const useIsMobile = (): { isMobile: boolean; isLoading: boolean } => {
 
   useEffect(() => {
     const checkIsMobile = () => {
-      setIsMobile(window.innerWidth <= 640);
+      setIsMobile(window.innerWidth <= 600);
       setIsLoading(false);
     };
 
