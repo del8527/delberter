@@ -62,7 +62,8 @@ function Hero() {
           <span className={styles.Hero__subtitle}>
             <AutoHackedTexts
               texts={[
-                "Software Eng Intern @ Tesla",
+                // "Prev Software Eng Intern @ Tesla",
+                "Incoming Software Engineer, Oct 2026",
                 "Soccer and Dodgeball Captain",
                 "Dog Lover",
                 "Rock Climber",
